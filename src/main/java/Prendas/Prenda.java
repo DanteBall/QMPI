@@ -1,4 +1,4 @@
-package Prenda;
+package Prendas;
 
 public class Prenda {
 
@@ -38,5 +38,53 @@ public class Prenda {
       case zapatos -> this.categoria == Categoria.calzado;
       case gorra -> this.categoria == Categoria.accesorios;
     };
+  }
+
+  public String getNombre() {
+    return nombre;
+  }
+
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
+
+  public TipoPrenda getTipo() {
+    return tipo;
+  }
+
+  public void setTipo(TipoPrenda tipo) {
+    this.tipo = tipo;
+  }
+
+  public Categoria getCategoria() {
+    return categoria;
+  }
+
+  public void setCategoria(Categoria categoria) {
+    this.categoria = categoria;
+  }
+
+  public String getMaterial() {
+    return material;
+  }
+
+  public void setMaterial(String material) {
+    this.material = material;
+  }
+
+  public String getColorPrimario() {
+    return colorPrimario;
+  }
+
+  public void setColorPrimario(String colorPrimario) {
+    this.colorPrimario = colorPrimario;
+  }
+
+  public String getColorSecundario() {
+    return colorSecundario;
+  }
+
+  public void setColorSecundario(String colorSecundario) {
+    this.colorSecundario = colorSecundario;
   }
 }

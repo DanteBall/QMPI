@@ -1,4 +1,4 @@
-package Prenda;
+package Prendas;
 
 public enum Categoria {
   parte_superior,

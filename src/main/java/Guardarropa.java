@@ -1,22 +1,31 @@
-import Prenda.Prenda;
-import Prenda.TipoPrenda;
-import Prenda.Categoria;
+import Prendas.Prenda;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
 public class Guardarropa {
   private List<Prenda> Prendas;
 
-  public void agregarPrenda(String nombre, TipoPrenda tipoPrenda, Categoria categoria, String material, String color, String colorSecundario){
-    Prenda prenda = new Prenda(nombre,tipoPrenda,categoria,material,color,colorSecundario);
-    if (prenda.prendaValida())
+  public void agregarPrenda(Prenda prenda){
+    if (prenda.prendaValida()) {
       this.Prendas.add(prenda);
+      System.out.println("Prenda agregada con exito");
+    }
     else
-      System.out.println("prenda no valida");
+       System.out.println("prenda no valida");
   }
 
-  public Guardarropa(List<Prenda> prendas) {
+  public Guardarropa() {
+    Prendas = new ArrayList<>();
+  }
+
+  public List<Prenda> getPrendas() {
+    return Prendas;
+  }
+
+  public void setPrendas(List<Prenda> prendas) {
     Prendas = prendas;
   }
 }
+

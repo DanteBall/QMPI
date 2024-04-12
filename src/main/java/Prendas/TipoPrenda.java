@@ -1,4 +1,4 @@
-package Prenda;
+package Prendas;
 
 public enum TipoPrenda {
   zapatos,
